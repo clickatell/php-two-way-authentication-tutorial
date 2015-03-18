@@ -1,0 +1,15 @@
+{
+  "name": "clickatell/two-way-authentication-tutorial",
+  "description": "A simple two way authentication tutorial via SMS",
+  "minimum-stability": "dev",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "Zachie du Bruyn",
+      "email": "zachie.dubruyn@clickatell.com"
+    }
+  ],
+  "require": {
+    "arcturial/clickatell": "2.0.0"
+  }
+}
