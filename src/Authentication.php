@@ -42,7 +42,7 @@ class Authentication
      */
     public function authenticate($username, $password) {
         if ($username == "admin" && $password == "password") {
-            return '279991231234';
+            return '27824320809';
         }
         else
         {
@@ -86,7 +86,7 @@ class Authentication
      */
     public function checkPin($pin)
     {
-        return ($pin == $_SERVER['pin']);
+        return ($pin == $_SESSION['pin']);
     }
 
     /**
