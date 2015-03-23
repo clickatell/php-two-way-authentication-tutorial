@@ -2,7 +2,7 @@
   "name": "clickatell/two-way-authentication-tutorial",
   "description": "A simple two way authentication tutorial via SMS",
   "minimum-stability": "dev",
-  "license": "proprietary",
+  "license": "GNU GENERAL PUBLIC LICENSE",
   "authors": [
     {
       "name": "Zachie du Bruyn",
