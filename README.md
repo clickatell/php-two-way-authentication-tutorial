@@ -5,3 +5,5 @@ You can see our other libraries and more documentation at the [Clickatell APIs a
 ------------------------------------
 
 This repository contains the source files for the Two way authentication tutorial in PHP.
+
+See STEPS.md
