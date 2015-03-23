@@ -1,4 +1,4 @@
-<form class="form-horizontal">
+<form class="form-horizontal" method="post">
     <fieldset>
 
         <!-- Form Name -->
@@ -17,7 +17,7 @@
         <div class="control-group">
             <label class="control-label" for="password">Password</label>
             <div class="controls">
-                <input id="password" name="password" type="password" placeholder="password" class="input-xlarge" required="required">
+                <input id="Password" name="Password" type="password" placeholder="password" class="input-xlarge" required="required">
 
             </div>
         </div>
