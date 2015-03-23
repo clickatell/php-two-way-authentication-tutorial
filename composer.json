@@ -11,5 +11,8 @@
   ],
   "require": {
     "arcturial/clickatell": "2.0.0"
+  },
+  "autoload": {
+    "psr-4": { "": "src/" }
   }
 }
