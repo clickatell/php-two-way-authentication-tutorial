@@ -9,7 +9,7 @@
             <label class="control-label" for="Pin">Pin</label>
             <div class="controls">
                 <input id="Pin" name="Pin" type="text" placeholder="#####" class="input-xlarge" required="">
-                <p class="help-block">pin sent to ****<?php substr($mobile, -4); ?></p>
+                <p class="help-block">pin sent to ****<?php echo substr($_SESSION['mobile'], -4); ?></p>
             </div>
         </div>
 
