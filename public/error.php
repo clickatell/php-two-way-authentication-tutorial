@@ -1,0 +1,1 @@
+<legend>Error authenticating or sending text message. Please try again.</legend>

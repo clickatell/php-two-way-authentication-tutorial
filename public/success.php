@@ -1,0 +1,1 @@
+<legend>Successful two way authentication.</legend>
