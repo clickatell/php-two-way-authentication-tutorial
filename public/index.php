@@ -1,5 +1,7 @@
 <?php
 
+    session_start();
+
     require_once ("../vendor/autoload.php");
 
     use Clickatell\Api\ClickatellHttp;
@@ -21,22 +23,23 @@
 
     // Authentication logic
     if (isset($_REQUEST['Submit'])) {
-
         // Login form
-        if (!isset($_REQUEST['Username']) && isset($_REQUEST['Password'])) {
+        if (isset($_REQUEST['Username']) && isset($_REQUEST['Password'])) {
             $mobile = $authentication->authenticate($_REQUEST['Username'], $_REQUEST['Password']);
-
             if ($mobile) {
+                $_SESSION['mobile'] = $mobile;
                 if ($authentication->sendPin($mobile)) {
                     $page = "pin.php";
                 } else {
                     $page = "error.php";
                 }
+            } else {
+                $page = "error.php";
             }
         }
 
         // Pin form
-        if ($_REQUEST['Pin']) {
+        if (isset($_REQUEST['Pin'])) {
             if ($authentication->checkPin($_REQUEST['Pin'])) {
                 $page = "success.php";
             } else {
